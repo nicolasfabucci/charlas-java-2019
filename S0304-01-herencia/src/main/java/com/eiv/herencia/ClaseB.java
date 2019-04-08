@@ -6,6 +6,7 @@ public class ClaseB implements InterfazB {
     public int metodoA() {
         // TODO Auto-generated method stub
         //a
+        //
         return 0;
     }  
 
