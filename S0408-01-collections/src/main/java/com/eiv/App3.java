@@ -18,10 +18,6 @@ public class App3 {
         
         Perro perro4 = mapa.get(4);
         System.out.println("perro: " + perro4.getDescripcion());
-        
-        for(Perro perro : perros) {
-            System.out.println("Perro: " + perro.getDescripcion());
-        }
     }
     
 }

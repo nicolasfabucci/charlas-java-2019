@@ -1,8 +1,7 @@
 package com.eiv;
 
-import java.util.HashMap;
-import java.util.Map;
-import java.util.Map.Entry;
+import java.util.HashSet;
+import java.util.Set;
 
 public class App2 {
 
@@ -12,16 +11,9 @@ public class App2 {
         
         nombres.add("nombre-1");
         nombres.add("nombre-2");
-//        nombres.add("nombre-2");
         
         for(String nombre : nombres) {
             System.out.println("Nombre: " + nombre);
-        }
-        
-        // Buscar uno por su clave
-        String descripcion = perroMap.get(1L);
-        System.out.println("Descripcion: " + descripcion);
-        
+        }   
     }
-
 }

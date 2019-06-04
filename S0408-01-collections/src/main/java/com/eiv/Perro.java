@@ -1,6 +1,5 @@
 package com.eiv;
 
-//public class Perro implements Comparable<Perro> {
 public class Perro {
 
     private Long id;
@@ -11,7 +10,6 @@ public class Perro {
     
     public Perro(String descripcion) {
         super();
-        this.id = id;
         this.descripcion = descripcion;
     }
 
@@ -60,10 +58,4 @@ public class Perro {
             return false;
         return true;
     }
-
-//    @Override
-//    public int compareTo(Perro o) {
-//        return this.descripcion.compareTo(o.getDescripcion());
-//    }
-    
 }
