@@ -8,21 +8,14 @@ public class App2 {
 
     public static void main(String[] args) {
         
-        Map<Long, String> perroMap = new HashMap<Long, String>();
+        Set<String> nombres = new HashSet<String>();
         
-        perroMap.put(1L, "perro-1");
-        perroMap.put(2L, "perro-2");
-        perroMap.put(3L, "perro-3");
-        perroMap.put(4L, "perro-4");
-        perroMap.put(5L, "perro-5");
-
-        // Recorrer ...
+        nombres.add("nombre-1");
+        nombres.add("nombre-2");
+//        nombres.add("nombre-2");
         
-        for(Entry<Long, String> perroEntry : perroMap.entrySet()) {
-            Long id = perroEntry.getKey();
-            String descripcion = perroEntry.getValue();
-            
-            System.out.println("ID: " + id + " - Descripcion: " + descripcion);
+        for(String nombre : nombres) {
+            System.out.println("Nombre: " + nombre);
         }
         
         // Buscar uno por su clave
@@ -30,4 +23,5 @@ public class App2 {
         System.out.println("Descripcion: " + descripcion);
         
     }
+
 }

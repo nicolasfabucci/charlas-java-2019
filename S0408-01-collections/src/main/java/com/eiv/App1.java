@@ -5,15 +5,25 @@ import java.util.List;
 
 public class App1 {
 
-    @SuppressWarnings({ "rawtypes", "unchecked" })
     public static void main(String[] args) {
+
+        List<String> nombres = new ArrayList<>();
+ 
+        nombres.add("eiv software");
+        nombres.add("diego");
+        nombres.add("6666");
         
-        List perros = new ArrayList();
+        for(String nombre : nombres) {
+            System.out.println("Nombre: " + nombre);
+        }
+
+        Perro perro1 = new Perro("descripcion-1");
+        Perro perro2 = new Perro("descripcion-2");
         
-        Perro perro1 = new Perro(1L, "perro-1");
-        Perro perro2 = new Perro(2L, "perro-2");
-        
+        List<Perro> perros = new ArrayList<>();
+        perros.add(new Perro("descripcion-3"));
         perros.add(perro1);
+        perros.add(perro2);
         perros.add(perro2);
         
         for(Object item : perros) {
@@ -21,6 +31,8 @@ public class App1 {
             System.out.println(perro.getDescripcion());
         }
         
-        System.out.println("Listo!");
+        for(Perro perro : perros) {
+            System.out.println("Nombre: " + perro);
+        }
     }
 }

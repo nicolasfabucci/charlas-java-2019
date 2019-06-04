@@ -1,24 +1,27 @@
 package com.eiv;
 
-import java.util.HashSet;
-import java.util.Set;
+import java.util.HashMap;
+import java.util.Map;
 
 public class App3 {
 
     public static void main(String[] args) {
         
-        Set<Perro> perros = new HashSet<Perro>();
+        Map<Integer, Perro> mapa = new HashMap<>();
         
-        perros.add(new Perro(1L, "p1"));
-        perros.add(new Perro(2L, "p2"));
-        perros.add(new Perro(3L, "p3"));
-        perros.add(new Perro(4L, "p4"));
-        perros.add(new Perro(5L, "p5"));
+        mapa.put(1, new Perro("perro-1"));
+        mapa.put(2, new Perro("perro-2"));
+        mapa.put(3, new Perro("perro-3"));
+        mapa.put(4, new Perro("perro-4"));
+        mapa.put(5, new Perro("perro-5"));
+        mapa.put(6, new Perro("perro-6"));
         
-        perros.add(new Perro(5L, "p5"));
+        Perro perro4 = mapa.get(4);
+        System.out.println("perro: " + perro4.getDescripcion());
         
         for(Perro perro : perros) {
             System.out.println("Perro: " + perro.getDescripcion());
         }
     }
+    
 }

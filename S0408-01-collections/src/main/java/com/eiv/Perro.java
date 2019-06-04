@@ -1,14 +1,15 @@
 package com.eiv;
 
+//public class Perro implements Comparable<Perro> {
 public class Perro {
 
     private Long id;
     private String descripcion;
-    
+
     public Perro() {
     }
-
-    public Perro(Long id, String descripcion) {
+    
+    public Perro(String descripcion) {
         super();
         this.id = id;
         this.descripcion = descripcion;
@@ -31,10 +32,15 @@ public class Perro {
     }
 
     @Override
+    public String toString() {
+        return descripcion;
+    }
+
+    @Override
     public int hashCode() {
         final int prime = 31;
         int result = 1;
-        result = prime * result + ((id == null) ? 0 : id.hashCode());
+        result = prime * result + ((descripcion == null) ? 0 : descripcion.hashCode());
         return result;
     }
 
@@ -47,12 +53,17 @@ public class Perro {
         if (getClass() != obj.getClass())
             return false;
         Perro other = (Perro) obj;
-        if (id == null) {
-            if (other.id != null)
+        if (descripcion == null) {
+            if (other.descripcion != null)
                 return false;
-        } else if (!id.equals(other.id))
+        } else if (!descripcion.equals(other.descripcion))
             return false;
         return true;
     }
 
+//    @Override
+//    public int compareTo(Perro o) {
+//        return this.descripcion.compareTo(o.getDescripcion());
+//    }
+    
 }
