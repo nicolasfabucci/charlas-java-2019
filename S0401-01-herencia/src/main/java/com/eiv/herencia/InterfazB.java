@@ -1,6 +1,12 @@
 package com.eiv.herencia;
 
-public interface InterfazB extends InterfazA  {
+/**
+ * Una interfaz puede extender una o mas interfaces
+ * 
+ * @author diego.cairone
+ *
+ */
+public interface InterfazB extends InterfazA {
 
-    public int MetodoB();
+    public int metodoB();
 }
